@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <h2 class="my-4">Edit Card</h2>
+        <form id="editForm" onsubmit=" event.preventDefault()">
+            <label for="id">Id:</label>
+            <input id="id" type="number" readonly class="form-control mb-3">
+            <label for="newTitle">New Album Id:</label>
+            <input id="newAlbumId" type="number" class="form-control mb-3">
+            <label for="newTitle">New Title:</label>
+            <input id="newTitle" type="text" class="form-control mb-3">
+            <label for="newTitle">New URL:</label>
+            <input id="newUrl" type="text" class="form-control mb-3">
+            <br>
+            <button class="btn btn-light fw-semibold" id="saveButton" onclick="editCard()">Save</button>
+            <button class="btn btn-light fw-semibold" onclick="cancelEdit()">Cancel</button>
+        </form>
+    </div>
+
+    <script src="editCard.js"></script>
+</body>
+
+</html>
